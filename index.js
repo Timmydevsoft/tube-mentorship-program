@@ -147,7 +147,7 @@ const testimonialData =  [
     },
 
     {
-        name: "David Akomolafe",
+        name: "Adam Abbdulrasheed",
         photo: "./images/unsplash_vjMgqUkS8q8 (1).png",
         shotpics: "./images/dark-testimonials-1-user-2 (1).jpg",
         testimony: "Participating in the Tube mentorship program has been nothing short of transformative for my career journey. The guidance and support I received from my mentor were not just professional, but profoundly personal. Through their wisdom and encouragement, I discovered facets of my potential that I never knew existed. The program provided a nurturing environment where I could openly discuss challenges and uncertainties, fostering a sense of belonging and growth. The camaraderie within the mentorship community was infectious, creating lasting connections that extend far beyond the program itself. The impact on my career has been undeniable, propelling me to heights I once considered unattainable. I am not just a beneficiary of knowledge; I am a testament to the power of mentorship, and I wholeheartedly endorse the Tube mentorship program to anyone seeking not just guidance, but a life-changing experience. ",
