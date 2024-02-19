@@ -1,0 +1,1392 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background: rgba(255, 255, 255, 1);
+    padding-top: 6.375rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(13, 27, 48, 1);
+    width: 100%;
+    height: 6.375rem;
+    border-bottom: 1px solid rgba(0, 177, 249, 1);
+    padding: 0 16%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+
+/* THIS IS TO CENTER ALL THE a TAG IN THE NAV BUTTONS */
+.nav button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.same-nav-category{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px; /*1.25rem*/;
+}
+
+#hobe-butt{
+    width: 7.4375rem;
+    height: 43px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    border: none;
+
+}
+
+#hobe-butt a{
+    text-decoration-line: none;
+    font-family: Inter;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(0, 5, 17, 1);
+}
+
+.same-nav-category button{
+    background: none;
+    border: solid 2px transparent;
+    height: 100%;
+    
+}
+
+
+.same-nav-category button:hover{
+    cursor: pointer;
+    border-bottom: solid 2px rgba(255, 255, 255, 1);
+}
+
+.same-nav-category button a{
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 102px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: rgba(255, 255, 255, 1);
+}
+
+.contact-nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex: 1;
+}
+
+.contact-nav-container button{
+    display: flex;
+    background: none;
+    align-items: center;
+    justify-content: center;
+    width: 119px;
+    height: 43px;
+    top: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.contact-nav-container button a{
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* MOBILE NAV CONTAINER */
+
+.mobile-nav-container{
+    display: none;
+}
+
+ /* #main{
+    margin-top: 6.375rem;
+}  */
+
+/* FIRST SECTION STARTTS HERE */
+
+.intro-to-tube-section{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+    width: 100%;
+    height: 375px;
+    padding: 0 16%;
+    background-image: url("./images/image\ 4.png");
+    background-color: rgba(13, 27, 48, 1);
+    padding-bottom: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* .introduction{
+    align-self:flex-end;
+} */
+
+.short-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 103px;
+    width: 14.25rem;
+    height: 2rem;
+    padding: 0 1% 0 5%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.short-details span:nth-child(1){
+    font-family: Inter;
+    font-size: 0.6875rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.short-details span:nth-child(2){
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+#tube-title{
+    width: 440px;
+    font-family: Inter;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.all-about-tube{
+    margin-top:  2rem;
+    width: 500px;
+    height: 156px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.intro-action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-action img{
+    margin-top: 19px;
+}
+
+#intro-Apply{
+    width: 234px;
+    height: 59px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    border: none;
+}
+
+#intro-Apply:hover{
+    cursor: pointer;
+}
+
+#intro-Apply a{
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(13, 27, 49, 1);
+}
+
+/* WHY TUBE SECTION */
+
+#why-tube{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 26.375rem;
+    padding: 0 16%;
+    margin: 135px 0;
+  
+}
+
+.why-tue-rght{
+    width: 42.56rem;
+}
+
+.why-tube-title{
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2.4375rem;
+    text-align: left;
+    color: rgba(35, 59, 96, 1);
+}
+
+.wht-tube-body{
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(17, 17, 17, 1);
+    margin-top: 1.25rem;
+}
+
+.why-tue-rght button{
+    width: 234px;
+    height: 59px;
+    border-radius: 1rem;
+    background: rgba(13, 27, 49, 1);
+    border: solid 1px transparent;
+    margin-top: 1rem;
+}
+
+.why-tue-rght button:hover{
+    background: rgba(255, 255, 255, 1) ;
+    border: solid 1px  rgba(13, 27, 49, 1);
+    cursor: pointer;
+} 
+
+.why-tue-rght button:hover a{
+    color: rgba(13, 27, 49, 1);
+}
+
+.why-tue-rght button a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+    text-align: center;
+}
+
+.why-tube-left{
+    position: relative;
+}
+
+.img1,
+.img2{
+    position: absolute;
+}
+
+.img2{
+    margin-left: -4rem;
+    margin-top: -140px;
+}
+
+.img1{
+    margin-top: -50px;
+    margin-left: -40px;
+}
+
+
+.empty-yello-box{
+    width: 20.25rem;
+    height: 322px;
+    border-radius: 1.875rem;
+    border: none;
+    z-index: -999;
+    background: rgba(255, 193, 62, 1);
+}
+
+/* background image image */
+
+.tube-bg-image{
+    position: absolute;
+    margin-bottom: -625px;
+    margin-left: -380px;
+    z-index: -999;
+}
+
+.tube-bg-2{
+    position: absolute;
+    margin-bottom: -510px;
+    margin-left: -90px;
+    z-index: -999;
+}
+
+/* ANOTHER SCETION HERE, WHY TUBE */
+
+#why-tube-used-as-border{
+    width: 100%;
+}
+
+.proper-why-tube{
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    align-items: center;
+    width: 100%;
+    height: auto /*33.6875rem*/;
+    padding: 3rem 16%;
+    
+}
+
+.title-why-tube span{
+    font-family: Inter;
+    font-size: 1.5625rem;
+    font-weight: 900;
+    line-height: 1.875rem;
+    letter-spacing: 0.13em;
+    text-align: left;
+    color: rgba(35, 59, 96, 1);
+}
+
+hr{
+    margin-top: 0.3rem;
+    width: 18.25rem;
+    height: 7px;
+    border: none;
+    background:linear-gradient(90deg, #FFB800 36.34%, rgba(255, 184, 0, 0) 89.01%);
+}
+
+.why-mentorhp-p{
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.44rem;
+    text-align: left;
+    color: rgba(68, 68, 68, 1);
+    margin-top: 1rem;
+    margin-bottom: 0.875rem;
+}
+
+.interactive-container{
+    background: rgba(234, 234, 234, 1);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+/* this style is for the arrows */
+.interactive-container img:hover{
+    cursor: pointer;
+}
+
+.proptcontanerA{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px  20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
+}
+
+.proptcontaner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px  20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-top:  1px solid rgba(0, 0, 0, 0.3);
+}
+
+.prompt{
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(35, 59, 96, 1);
+}
+
+#prompt1.clicked,
+#prompt2.clicked,
+#prompt3.clicked,
+#prompt4.clicked,
+#prompt5.clicked{
+    font-weight: 700;
+}
+
+#ans1.active,
+#ans2.active,
+#ans3.active,
+#ans4.active,
+#ans5.active{
+    display: block;
+}
+
+
+
+
+
+
+#arrow-2.inactive,
+#arrow-1.inactive,
+#arrow-3.inactive,
+#arrow-4.inactive,
+#arrow-5.inactive{
+    display: none;
+}
+
+#arrow2-d,
+#arrow-1-d,
+#arrow-3-d,
+#arrow-4-d,
+#arrow-5-d{
+    display:none;
+}
+
+#arrow2-d.active,
+#arrow-1-d.active,
+#arrow-3-d.active,
+#arrow-4-d.active,
+#arrow-5-d.active{
+    display: block;
+}
+
+
+.interactives p{
+    display: none;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(35, 59, 96, 1);
+    padding: 0.875rem  0 0 20px;
+    padding-bottom: 0.5rem;
+}
+
+/* IS TUBE FOR YOU SECTION */
+
+.for-u{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+}
+
+#is-it-for-you-q{
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2.4375rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(35, 59, 96, 1);
+}
+
+#intro-to-who-is-for{
+    margin: 1.25rem 0;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1875rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(35, 59, 96, 1);
+}
+
+.list-of-those-its-for{
+    width: 80%;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(35, 59, 96, 1);
+    padding: 0 1rem;
+}
+
+.list-of-those-its-for li::marker{
+    color: rgba(35, 59, 96, 1);
+    font-size: 1.5rem;
+}
+
+.empty-yellow-dive{
+    width: 20.25rem;
+    height: 20.125rem;
+    border-radius: 30px;
+    background: rgba(255, 193, 62, 1);
+}
+
+.is-it-for-you-right{
+    position: relative;
+}
+
+#is-it-bg1{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -30px;
+}
+
+#is-it-bg2{
+    position: absolute;
+    margin-top: -150px;
+    margin-left: -40px;
+}
+
+/* FACILITATORS SECTION */
+
+.meet-facilitator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* height: 80.375rem; */
+    padding: 0 2rem;
+    margin-top: 200px;
+}
+
+.into-text-to-faci{
+    display: block;
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2.4375rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(35, 59, 96, 1);
+}
+
+.facilit-title{
+    width: 100%;
+}
+
+.fac-head{
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 184, 0, 1);
+    margin-top: 0.875rem;
+    margin-bottom: 33px;
+}
+
+.facilitator-body{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 33px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.fac1{
+    display: flex;
+    flex-direction: column;
+    width: 14.64%;
+    height: 420px;
+}
+
+.fac1 img{
+    margin-bottom: 1.125rem;
+}
+
+.about-facilitator span:nth-child(1){
+    display: block;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.8125rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+}
+
+.about-facilitator span:nth-child(2){
+    display: block;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8125rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* TESTIMONIAL SECTION STARTS HERE */
+
+#testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    height: 634px;
+    margin: 12.5%;
+}
+
+.slider-container{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-container button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+}
+
+.slider-container button:hover{
+    cursor: pointer;
+}
+
+
+.testimonies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    padding-left: 100px;
+    background: rgba(42, 124, 199, 1);
+}
+
+.testimonies.babalola{
+    background: rgba(13, 27, 48, 1);
+
+}
+
+.testimonies.lady{
+    background: rgba(98, 85, 55, 1);
+}
+
+#testimonial-title{
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.125rem;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    width: 90%;
+}
+
+.testimonies p{
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    width: 90%;
+    margin-top: 1.25rem;
+    text-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.28);
+
+}
+
+.mentee{
+    height: 100%;
+}
+
+.ratin-container{
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+
+.ratin-container img{
+    border-radius: 50%;
+    border: none;
+}
+
+.stars span{
+    display: block;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: 0.24px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.toggler-buttons{
+    /* position: sticky; */
+    display: flex;
+    justify-content: end;
+    width: 70%;
+    gap: 30px;
+}
+
+.toggler-buttons button{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#mentssA{
+    background: rgba(255, 255, 255, 1);
+}
+
+#mentssA.inactive{
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.mentssB.active,
+.mentssC.active,
+.mentssD.active{
+    background: rgba(255, 255, 255, 1);
+}
+
+/* MENTEES OVER THE YEASR */
+
+#mentees-over-the-years{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1055px;
+    background: rgba(13, 27, 48, 1);
+    background-image: url("./images/OIPy\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 54.375% ;
+    background-position-x: center;
+    background-position-y: bottom;
+    width: 100%;
+}
+
+.overt-the-years-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65.73%;
+    margin-top: 30px;
+}
+
+#over-d-years-titke{
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2.4375rem;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.over-the-yeras-middle{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 30px;
+    width: 62.92%;
+    background: rgba(255, 255, 255, 0.04);
+    height: 276px;
+    padding: 1.5rem;
+}
+
+.time,
+.month,
+.individual-project,
+.project{
+    width: 23.69%;
+    padding-right: 1rem;
+}
+
+.time,
+.month,
+.individual-project{
+    border-right: solid 2px #FFC13E;
+}
+
+.num{
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 39px;
+    color: #FFC13E;
+}
+
+.main-did{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.main-did span:nth-child(2){
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.time p,
+.month p,
+.individual-project p,
+.project p{
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.875rem;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 35px;
+}
+
+.over-the-years-end{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 164px;
+}
+
+h6{
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 85px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    width: 54%;
+}
+
+#apply-this-cohort{
+    width: 34.25rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 1);
+    border: solid 2px transparent;
+    height: 59px;
+    margin-top: 2rem;
+}
+
+#apply-this-cohort:hover{
+    cursor: pointer;
+}
+
+#apply-this-cohort a{
+    text-decoration: none;
+    color: rgba(13, 27, 49, 1);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+/* FOOTER STARTS HERE */
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 16%;
+    height: 300px;
+}
+
+.logo-about{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 74px;
+    width: 100%;
+}
+
+.footer-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:auto;
+    width: 262.5px;
+    height: 42.8px;
+    border-left: solid 1px rgba(255, 255, 255, 0.4);
+    border-right: solid 1px rgba(255, 255, 255, 0.4);
+}
+
+.footer-social:hover{
+    cursor: pointer;
+}
+
+.policy{
+    display: flex;
+    align-items: center;
+    width: auto;
+    /* width: 36.25rem; */
+    height: 30px;
+    gap: 2rem
+}
+
+.policy button{
+    border: solid 1px transparent;
+    border-right: solid 2px rgba(255, 255, 255, 0.4);
+    background: none;
+    height: 100%;
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+   
+}
+
+.policy button:hover{
+    cursor: pointer;
+}
+
+
+
+@media(max-width: 420px){
+
+
+
+
+    body{
+        padding-top: 4rem;
+        overflow-x: hidden;
+        height: auto;
+        width: 100vw;
+    }
+
+    .header{
+        width: 100%;
+        height: 4rem;
+        padding: 0 20px;
+
+    }
+
+    /* mobile navigation */
+
+      .nav{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        width: 100%;
+        padding: 2rem 2rem;
+        left: 0;
+        top: 4rem;
+        height: auto;
+        background: rgba(13, 27, 48, 1);
+        transition: all 0.3s linear;
+    }
+
+    .nav.active{
+        display: flex;
+    }
+
+    .same-nav-category{
+        width: 200px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .same-nav-category button{
+        height: 43px;
+    }
+
+    .mobile-nav-container{
+        display: block;
+    }
+
+    #menu.inactive{
+        display: none;
+    }
+
+    #close{
+        display: none;
+    }
+
+    #close.active{
+        display: block;
+    }
+
+    #main{
+        width: 100%;
+    }
+
+    /* mobile navigation ends here */
+
+    .intro-to-tube-section{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .introduction{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .short-details{
+        width: auto;
+    }
+
+  
+
+    #tube-title{
+        width: 100%;
+        text-align: center;
+    }
+
+    .all-about-tube{
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro-action{
+        padding-bottom: 1.25rem;
+    }
+
+    /* SECTION TWO STARTS HERE */
+
+    #why-tube{
+        flex-direction: column;
+        padding: 0 20px;
+        align-items: center;
+        margin: 100px  0;
+        height: auto;
+
+    }
+
+    .why-tue-rght{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .why-tube-title{
+        text-align: center;
+    }
+
+    .wht-tube-body{
+        
+        width: 100%;
+        text-align: center;
+    }
+
+    .why-tue-rght button{
+        margin-top: 2rem;
+        justify-self: center
+    }
+
+    .why-tube-left{
+        display: flex;
+        justify-content: center;
+        margin-top: 25rem;
+        margin-bottom: 100px;
+        width: 100%;
+    }
+
+    .empty-yello-box{
+        width: 300px;
+    }
+
+    .img1{
+        margin-left: -80px;
+    }
+
+    .img2{
+        margin-top: 200px;
+        width: 300px;
+    }
+
+    /* bg image */
+
+    .tube-bg-image{
+        
+        margin-bottom: 0;
+        z-index: -999;
+        bottom: -68rem;
+        margin-right: -16rem;
+        width: 100vw;
+    }
+    
+    .tube-bg-2{
+        margin-bottom: 0;
+        bottom: -62rem;
+    }
+
+    /* ANOTHER SCETION HERE, WHY TUBE */
+
+    .proper-why-tube{
+        flex-direction: column-reverse;
+        padding: 0 20px;
+    }
+
+    .title-why-tube span{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+
+    .interactives,
+    .interactive-container{
+        width: 100%;
+    }
+
+    .interactives p{
+        padding-right: 1rem;
+    }
+
+    .left-protube-why{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .left-protube-why img{
+        width: 100%;
+    }
+
+    /* IS TUBE FOR YOU SECTION */
+
+    .for-u{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .is-it-for-you-left{
+        margin-bottom: 4rem;
+    }
+
+    #is-it-for-you-q{
+        width: 100%;
+        text-align: center;
+    }
+
+    .list-of-those-its-for{
+        width: 100%;
+    }
+
+    .empty-yellow-dive{
+        width: 300px;
+    }
+
+    #is-it-bg2{
+        width: 300px;
+        margin-left: -20px;
+    }
+
+    /* FACILITATORS SECTION */
+
+    .meet-facilitator{
+        padding: 20px;
+    }
+
+    .into-text-to-faci{
+        width: 100%;
+        text-align: center;
+    }
+
+    .fac-head{
+        font-size: 3.125rem;
+    }
+
+    .facilitator-body{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    .fac1{
+        width: 95%;
+        height: auto;
+    }
+
+    .about-facilitator span:nth-child(1){
+        font-size: 2rem;
+    }
+
+    .about-facilitator span:nth-child(2){
+        font-size: 1.2rem;
+    }
+
+    /* TESTIMONIAL SECTION STARTS HERE */
+
+    #testimonial{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 4rem 0 0 0;
+        padding:0  20px;
+        height: auto;
+    }
+
+    .testimonies{
+        padding: 1rem;
+        height: auto;
+        width: 100%;
+    }
+
+    #testimonial-title{
+        width: 100%;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .testimonies p{
+        width: 100%;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+
+    .mentee{
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    .slider-container{
+        top: 790rem;
+        width: 100%;
+    }
+
+    /* MENTEES OVER THE YEASR */
+
+
+    #mentees-over-the-years{
+        padding: 0 20px;
+        height: auto;
+        background-size: 90% 1220px;
+    }
+
+    .overt-the-years-1{
+        flex-direction: column-reverse;
+        width: 100%;
+        /* gap: 3rem; */
+        height: auto;
+    }
+
+    #over-d-years-titke{
+        text-align: center;
+    }
+
+    .over-the-yeras-middle{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        height: auto;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .time,
+    .month,
+    .individual-project,
+    .project{
+        width: 100%;
+        border: solid 2px #FFC13E;
+        border-radius: 0.5rem;
+        padding: 1rem;
+    }
+
+    .time p,
+    .month p,
+    .individual-project p,
+    .project p{
+        margin: 1.5rem 0 2.5rem 0;
+    }
+
+    .over-the-years-end{
+        margin: 2rem;
+        width: 100%;
+    }
+
+    h6{
+        width: 100%;
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    #apply-this-cohort{
+        width: 95%;
+    }
+   
+
+    /* FOOTER STARTS HERE */
+
+    #about{
+        padding: 2rem  20px 3rem 20px;
+        justify-content: space-between;
+        height: 300px;
+    }
+
+    .logo-about{
+        margin-top: 0;
+    }
+
+    .policy{
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        gap: 0;
+        height: auto;
+
+    }
+
+    
+}
