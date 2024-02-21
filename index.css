@@ -55,36 +55,18 @@ body{
     width: 500px; /*1.25rem*/;
 }
 
-#hobe-butt{
+
+
+.navigate{
     width: 7.4375rem;
     height: 43px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 1);
+    background: transparent;
     border: none;
-
 }
 
-#hobe-butt a{
-    text-decoration-line: none;
-    font-family: Inter;
-    font-size: 0.8125rem;
-    font-weight: 700;
-    letter-spacing: 0em;
-    text-align: center;
-    color: rgba(0, 5, 17, 1);
-}
-
-.same-nav-category button{
-    background: none;
-    border: solid 2px transparent;
-    height: 100%;
-    
-}
-
-
-.same-nav-category button:hover{
+.navigate:hover{
     cursor: pointer;
-    border-bottom: solid 2px rgba(255, 255, 255, 1);
 }
 
 .same-nav-category button a{
@@ -92,7 +74,7 @@ body{
     font-family: Inter;
     font-size: 14px;
     font-weight: 700;
-    line-height: 102px;
+    line-height: 43px;
     letter-spacing: 0em;
     text-align: right;
     color: rgba(255, 255, 255, 1);
@@ -118,6 +100,7 @@ body{
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
+
 .contact-nav-container button a{
     text-decoration: none;
     font-family: Inter;
@@ -128,15 +111,14 @@ body{
     color: rgba(255, 255, 255, 1);
 }
 
+
 /* MOBILE NAV CONTAINER */
 
 .mobile-nav-container{
     display: none;
 }
 
- /* #main{
-    margin-top: 6.375rem;
-}  */
+
 
 /* FIRST SECTION STARTTS HERE */
 
@@ -656,6 +638,10 @@ hr{
     color: rgba(0, 0, 0, 0.7);
 }
 
+.indicator-container{
+    display: none;
+}
+
 /* TESTIMONIAL SECTION STARTS HERE */
 
 #testimonial{
@@ -802,7 +788,7 @@ hr{
     background: rgba(13, 27, 48, 1);
     background-image: url("./images/OIPy\ 1.png");
     background-repeat: no-repeat;
-    background-size: 54.375% ;
+    background-size: 110% ;
     background-position-x: center;
     background-position-y: bottom;
     width: 100%;
@@ -988,6 +974,10 @@ h6{
     cursor: pointer;
 }
 
+@media(min-width: 100) and (max-width: 1440px){
+
+}
+
 
 
 @media(max-width: 420px){
@@ -1030,15 +1020,19 @@ h6{
         display: flex;
     }
 
+    .same-nav-category button a{
+        line-height: 43px;
+    }
+
     .same-nav-category{
         width: 200px;
         flex-direction: column;
         height: auto;
     }
 
-    .same-nav-category button{
+    /* .same-nav-category button{
         height: 43px;
-    }
+    } */
 
     .mobile-nav-container{
         display: block;
@@ -1103,8 +1097,13 @@ h6{
         flex-direction: column;
         padding: 0 20px;
         align-items: center;
-        margin: 100px  0;
+        margin-top: 3rem;
         height: auto;
+        background-image: url("./images/Mask group.png");
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position-y: 31rem;
+    
 
     }
 
@@ -1133,7 +1132,7 @@ h6{
     .why-tube-left{
         display: flex;
         justify-content: center;
-        margin-top: 25rem;
+        margin-top: 7rem;
         margin-bottom: 100px;
         width: 100%;
     }
@@ -1153,19 +1152,20 @@ h6{
 
     /* bg image */
 
+    /* I used the image as a background image of the main container of this setion */
     .tube-bg-image{
-        
+        display: none;
         margin-bottom: 0;
         z-index: -999;
-        bottom: -68rem;
+        top: -68rem;
         margin-right: -16rem;
         width: 100vw;
     }
     
-    .tube-bg-2{
+    /* .tube-bg-2{
         margin-bottom: 0;
         bottom: -62rem;
-    }
+    } */
 
     /* ANOTHER SCETION HERE, WHY TUBE */
 
@@ -1249,14 +1249,20 @@ h6{
     }
 
     .facilitator-body{
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: nowrap;
         height: auto;
+        overflow-x: scroll;
+        justify-content: start;
     }
 
     .fac1{
-        width: 95%;
-        height: auto;
+        width: 90vw;
+        height: 400px;
+    }
+
+    .fac1 img{
+        width: 70vw;
     }
 
     .about-facilitator span:nth-child(1){
@@ -1264,8 +1270,27 @@ h6{
     }
 
     .about-facilitator span:nth-child(2){
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
+
+    .indicator-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        width: 95vw;
+    }
+
+    .indicator{
+        width: 8px;
+        height: 8px;
+        margin: 0 8px;
+        cursor: pointer;
+        border-radius: 50%;
+        border: solid 1px #FFC13E  /* rgba(0, 0, 0, 0.7)*/;
+       background: none;
+    }
+
+
 
     /* TESTIMONIAL SECTION STARTS HERE */
 
@@ -1301,7 +1326,7 @@ h6{
     }
 
     .slider-container{
-        top: 790rem;
+        top: 350rem;
         width: 100%;
     }
 
@@ -1311,7 +1336,7 @@ h6{
     #mentees-over-the-years{
         padding: 0 20px;
         height: auto;
-        background-size: 90% 1220px;
+        background-size: 100% 73%;
     }
 
     .overt-the-years-1{
