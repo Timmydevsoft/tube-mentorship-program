@@ -4,6 +4,11 @@ const nav = document.querySelector(".nav");
 const navButtons = document.querySelectorAll(".navigate");
 const hamburger = document.getElementById("menu");
 const close = document.getElementById("close");
+const aboutButton = document.getElementById("aboutpage");
+const testButton = document.getElementById("testi");
+const mentButton = document.getElementById("ment");
+const home = document.getElementById("homeAnchor");
+const footerAnchor = document.getElementById("contact-anchor");
 
 hamburger.addEventListener("click", ()=>{
     hamburger.classList.add("inactive");
@@ -18,12 +23,105 @@ close.addEventListener("click", ()=>{
 })
 
 navButtons.forEach(p=>{
-    p.addEventListener("click", ()=>{
+    p.addEventListener("click", (k)=>{
+        p.style.backgroundColor = "none";
+
+        let present = k.currentTarget.classList
+
+        if(present.contains("B")){
+            navButtons[0].style.backgroundColor = "transparent";
+            navButtons[1].style.backgroundColor = "rgba(255, 255, 255, 1)";
+            navButtons[2].style.backgroundColor = "transparent";
+            navButtons[3].style.backgroundColor = "transparent";
+            navButtons[4].style.backgroundColor = "transparent";
+            navButtons[4].style.borderColor = "white";
+            
+            home.style.color = "rgba(255, 255, 255, 1)";
+            aboutButton.style.color = "rgba(0, 5, 17, 1)";
+            testButton.style.color = "rgba(255, 255, 255, 1)";
+            footerAnchor.style.color = "rgba(255, 255, 255, 1)";
+           
+        }
+
+        else if (present.contains("C")){
+            navButtons[0].style.backgroundColor = "transparent";
+            navButtons[1].style.backgroundColor = "transparent";
+            navButtons[2].style.backgroundColor = "rgba(255, 255, 255, 1)";
+            navButtons[3].style.backgroundColor = "transparent";
+            navButtons[4].style.backgroundColor = "transparent";
+            navButtons[4].style.borderColor = "white";
+            footerAnchor.style.color = "rgba(255, 255, 255, 1)";
+            aboutButton.style.color = "rgba(255, 255, 255, 1)";
+            home.style.color = "rgba(255, 255, 255, 1)";
+            testButton.style.color = "rgba(0, 5, 17, 1)";
+            mentButton.style.color = "rgba(255, 255, 255, 1)";
+        }
+
+        else if (present.contains("D")){
+            navButtons[0].style.backgroundColor = "transparent";
+            navButtons[1].style.backgroundColor = "transparent";
+            navButtons[2].style.backgroundColor = "transparent";
+            navButtons[3].style.backgroundColor = "rgba(255, 255, 255, 1)";
+            navButtons[4].style.backgroundColor = "transparent";
+            navButtons[4].style.borderColor = "white";
+            footerAnchor.style.color = "rgba(255, 255, 255, 1)";
+            aboutButton.style.color = "white";
+            home.style.color = "rgba(255, 255, 255, 1)";
+            testButton.style.color = "rgba(255, 255, 255, 1)";
+            
+            mentButton.style.color ="rgba(0, 5, 17, 1)";
+        }
+
+        else if (present.contains("A")){
+            navButtons[0].style.backgroundColor = "rgba(255, 255, 255, 1)";
+            navButtons[1].style.backgroundColor = "transparent";
+            navButtons[2].style.backgroundColor = "transparent";
+            navButtons[3].style.backgroundColor = "transparent";
+            navButtons[4].style.backgroundColor = "transparent";
+            navButtons[4].style.borderColor = "white";
+            footerAnchor.style.color = "rgba(255, 255, 255, 1)";
+            aboutButton.style.color = "white";
+            home.style.color = "rgba(0, 5, 17, 1)";
+            testButton.style.color = "rgba(255, 255, 255, 1)";
+            mentButton.style.color = "rgba(255, 255, 255, 1)";
+        }
+        else if(present.contains("E")){
+            navButtons[0].style.backgroundColor = "transparent";
+            navButtons[1].style.backgroundColor = "transparent";
+            navButtons[2].style.backgroundColor = "transparent";
+            navButtons[3].style.backgroundColor = "transparent";
+            navButtons[4].style.backgroundColor = "white";
+            navButtons[4].style.borderColor = "rgba(42, 124, 199, 1)";
+            footerAnchor.style.color = "rgba(0, 5, 17, 1)";
+            aboutButton.style.color = "white";
+            home.style.color = "rgba(255, 255, 255, 1)";
+            testButton.style.color = "rgba(255, 255, 255, 1)";
+            mentButton.style.color = "rgba(255, 255, 255, 1)";
+        }
+
+
+
+
+
+        // mobile response
         hamburger.classList.remove("inactive");
         close.classList.remove("active");
         nav.classList.remove("active");
+        aboutButton.classList.add("active");
     })
 })
+
+// navButtons.forEach(k=>{
+//     k.addEventListener("click", (h)=>{
+//         let holder = h.classList.currentTarget
+//         if (holdercontains("B")){
+//             k.classList.add("active");
+
+//         }
+//     })
+// })
+
+// HIIGHLIGHTING THRCLICKED NAV BUTTONS 
 
 
 
@@ -311,4 +409,58 @@ bkwSlider.addEventListener("click", ()=>{
     }
 
     return sliderNote
+})
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    navButtons[0].style.backgroundColor = "white";
+    home.style.color = "rgba(0, 5, 17, 1)"
+
+    const scrollContainer = document.querySelector(".facilitator-body");
+    scrollContainer.scrollLeft = 0;
+    const indicatorContainer = document.querySelector(".indicator-container");
+    let currentIndex = 0;
+
+    for(let i = 0; i<scrollContainer.children.length; i++){
+        const indicator = document.createElement("div");
+        indicator.classList.add("indicator");
+        indicatorContainer.appendChild(indicator);
+
+
+        // Adding click event to the coreponding element
+
+        indicator.addEventListener("click", ()=>{
+            currentIndex = i;
+            updateIndicators();
+            scrollContainer.scrollLeft =  i*scrollContainer.children[0].offsetWidth;
+
+        });
+
+    }
+
+    // UPDATING indicators based on scroll position
+
+    scrollContainer .addEventListener("scroll", ()=>{
+         currentIndex = Math.round(scrollContainer.scrollLeft/scrollContainer.children[0].offsetWidth);
+        //  updateIndicators();
+         updateIndicators();
+    })
+
+    // function to update indicators base on the current scroll position
+
+    const updateIndicators = ()=>{
+        const indicators = document.querySelectorAll(".indicator");
+
+        indicators.forEach((indicator,index)=>{
+            if (index === currentIndex){
+                indicator.style.backgroundColor ="white";
+
+            }
+
+            else{
+                indicator.style.backgroundColor = "#FFC13E";
+            }
+        })
+        
+    }
+
 })
