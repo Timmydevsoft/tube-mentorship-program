@@ -263,6 +263,24 @@ const testimonialData =  [
        photo: "./images/unsplash_vjMgqUkS8q8 (3).png",
        shotpics: "./images/dark-testimonials-1-user-2 (3).jpg",
        testimonyone: "TMP was more than a mentorship program but a life changing program for me. TMP helped me to know what would be required of me when I transition into the workspace and also prepared me for it. The mentorship offered insight into topics I needed to be a choice candidate as I move into the future of work and these topics were taught by industry experts. What about the amazing opportunity to network with intelligent undergraduates like me from universities across Nigeria? TMP is a place to be."
+    },
+
+    {
+        name: "Usaama Ssewankambo",
+        photo:"./images/Usaama.png",
+        shotpics:"./images/usamashot.jpg",
+        bg:  "rgba(55, 98, 76, 1)",
+        testimonyone: "The Tube Mentorship Program was a transformative experience in my journey of personal and professional development. I completed the program ready to face the highly competitive world outside school, thanks to the well-thought-out core curriculum that opened my eyes and mind to the soft skills like growing a growth mindset, identifying and maximizing opportunities, emotional intelligence, networking, and writing a compelling CV and other documents about myself. The well-thought-out accountability system fostered a culture of teamwork, especially during the group capstone project, and I enjoyed the peer support that saw my group win the grand prize. I definitely testify that participating in the TMP set me apart. Much gratitude to the founders of TMP for this great spirit of pan-Africanism. I highly recommend this to all final-year students."
+    },
+     
+    {
+        name: "Kaitochukwu Chukwudi",
+        photo:"./images/chukwudi.png",
+        shotpics:"./images/chukudishot.jpg",
+        testimonyone: "My TMP experience was wholesome. As a final year student who was trying to find her feet career-wise and needed mentorship, this program became an opportunity to not only gain the required knowledge and skills needed to build a solid career profile, but also, it provided me a mentor for life, one that has continually helped to shape and mould me to become industry ready and relevant.",
+        testimonytwo: "Each and every session, from the book reviews to the project presentation, were all tailored towards participants growth, collaboration and learning enhancement, and for this, I am sincerely grateful to the organizers; Abisola Kuku, Adenike Tokan-Lawal, and Joy Boloma. I encourage every finalist to grab this life-changing opportunity that will intentionally set a path for their future.",
+        bg: "rgba(67, 55, 98, 1)"
+
     }
 
 ]
@@ -275,6 +293,8 @@ const indicateA = document.getElementById("mentssA");
 const indicateB = document.querySelector(".mentssB");
 const indicateC = document.querySelector(".mentssC");
 const indicateD = document.querySelector(".mentssD");
+const indicateE = document.querySelector(".mentssE");
+const indicateF = document.querySelector(".mentssF");
 
 const bkwSlider = document.querySelector(".backward");
 const fwdSlider = document.querySelector(".forward");
@@ -296,11 +316,15 @@ fwdSlider.addEventListener("click", ()=>{
         roundphoto.src = testimonialData[0].shotpics;
         testimonies.classList.remove("babalola");
         testimonies.classList.remove("lady");
+        testimonies.classList.remove("usaama");
+        testimonies.classList.remove("chukwudi");
 
         indicateA.classList.remove("inactive");
         indicateB.classList.remove("active");
         indicateC.classList.remove("active");
         indicateD.classList.remove("active");
+        indicateE.classList.remove("active");
+        indicateF.classList.remove("active");
     }
 
     else if(sliderNote ===2){
@@ -312,11 +336,15 @@ fwdSlider.addEventListener("click", ()=>{
         roundphoto.src = testimonialData[1].shotpics;
         testimonies.classList.remove("babalola");
         testimonies.classList.remove("lady");
+        testimonies.classList.remove("usaama");
+        testimonies.classList.remove("chukwudi");
 
         indicateA.classList.add("inactive");
         indicateB.classList.add("active");
         indicateC.classList.remove("active");
         indicateD.classList.remove("active");
+        indicateE.classList.remove("active");
+        indicateF.classList.remove("active");
     }
     else if(sliderNote ===3){
         paraOne.innerHTML = testimonialData[2].testimonyone;
@@ -327,11 +355,15 @@ fwdSlider.addEventListener("click", ()=>{
         roundphoto.src = testimonialData[2].shotpics;
         testimonies.classList.remove("lady");
         testimonies.classList.add("babalola");
+        testimonies.classList.remove("usaama");
+        testimonies.classList.remove("chukwudi");
 
         indicateA.classList.add("inactive");
         indicateB.classList.remove("active");
         indicateC.classList.add("active");
         indicateD.classList.remove("active");
+        indicateE.classList.remove("active");
+        indicateF.classList.remove("active");
     }
     else if (sliderNote === 4){
         paraOne.innerHTML = testimonialData[3].testimonyone;
@@ -342,15 +374,60 @@ fwdSlider.addEventListener("click", ()=>{
         roundphoto.src = testimonialData[3].shotpics;
         testimonies.classList.remove("babalola");
         testimonies.classList.add("lady");
+        testimonies.classList.remove("usaama");
+        testimonies.classList.remove("chukwudi");
 
         indicateA.classList.add("inactive");
         indicateB.classList.remove("active");
         indicateC.classList.remove("active");
         indicateD.classList.add("active");
+        indicateE.classList.remove("active");
+        indicateF.classList.remove("active");
+    }
+
+    else if(sliderNote === 5){
+        paraOne.innerHTML = testimonialData[4].testimonyone;
+        paraTwo.innerHTML = ""
+        paraThree.innerHTML = ""
+        menteeName.innerHTML = testimonialData[4].name;
+        picture.src = testimonialData[4].photo;
+        roundphoto.src = testimonialData[4].shotpics;
+        testimonies.classList.add("usaama");
+        testimonies.classList.remove("babalola");
+        testimonies.classList.remove("lady");
+        testimonies.classList.remove("chukwudi");
+
+        indicateA.classList.add("inactive");
+        indicateB.classList.remove("active");
+        indicateC.classList.remove("active");
+        indicateD.classList.remove("active");
+        indicateE.classList.add("active");
+        indicateF.classList.remove("active");
+
+    }
+
+    else if(sliderNote === 6){
+        paraOne.innerHTML = testimonialData[5].testimonyone;
+        paraTwo.innerHTML = testimonialData[5].testimonytwo;
+        paraThree.innerHTML = ""
+        menteeName.innerHTML = testimonialData[5].name;
+        picture.src = testimonialData[5].photo;
+        roundphoto.src = testimonialData[5].shotpics;
+        testimonies.classList.remove("usaama");
+        testimonies.classList.remove("babalola");
+        testimonies.classList.remove("lady");
+        testimonies.classList.add("chukwudi");
+
+        indicateA.classList.add("inactive");
+        indicateB.classList.remove("active");
+        indicateC.classList.remove("active");
+        indicateD.classList.remove("active");
+        indicateE.classList.remove("active");
+        indicateF.classList.add("active");
     }
 
     else{
-        sliderNote = 4;
+        sliderNote = 6;
     }
      return  sliderNote
 })
@@ -366,11 +443,16 @@ bkwSlider.addEventListener("click", ()=>{
         roundphoto.src = testimonialData[0].shotpics;
         testimonies.classList.remove("babalola");
         testimonies.classList.remove("lady");
+        testimonies.classList.remove("usaama");
+        testimonies.classList.remove("chukwudi");
+        
 
         indicateA.classList.remove("inactive");
         indicateB.classList.remove("active");
         indicateC.classList.remove("active");
         indicateD.classList.remove("active");
+        indicateE.classList.remove("active");
+        indicateF.classList.remove("active");
     }
     else if(sliderNote ===2){
         paraOne.innerHTML = testimonialData[1].testimony;
@@ -381,11 +463,15 @@ bkwSlider.addEventListener("click", ()=>{
         roundphoto.src = testimonialData[1].shotpics;
         testimonies.classList.remove("babalola");
         testimonies.classList.remove("lady");
+        testimonies.classList.remove("usaama");
+        testimonies.classList.remove("chukwudi");
 
         indicateA.classList.add("inactive");
         indicateB.classList.add("active");
         indicateC.classList.remove("active");
         indicateD.classList.remove("active");
+        indicateE.classList.remove("active");
+        indicateF.classList.remove("active");
     }
 
     else if(sliderNote ===3){
@@ -397,11 +483,55 @@ bkwSlider.addEventListener("click", ()=>{
         roundphoto.src = testimonialData[2].shotpics;
         testimonies.classList.add("babalola");
         testimonies.classList.remove("lady");
+        testimonies.classList.remove("usaama");
+        testimonies.classList.remove("chukwudi");
 
         indicateA.classList.add("inactive");
         indicateB.classList.remove("active");
         indicateC.classList.add("active");
         indicateD.classList.remove("active");
+        indicateE.classList.remove("active");
+        indicateF.classList.remove("active");
+    }
+
+    else if (sliderNote === 4){
+        paraOne.innerHTML = testimonialData[3].testimonyone;
+        paraTwo.innerHTML = ""
+        paraThree.innerHTML = ""
+        menteeName.innerHTML = testimonialData[3].name;
+        picture.src = testimonialData[3].photo;
+        roundphoto.src = testimonialData[3].shotpics;
+        testimonies.classList.remove("babalola");
+        testimonies.classList.add("lady");
+        testimonies.classList.remove("usaama");
+        testimonies.classList.remove("chukwudi");
+
+        indicateA.classList.add("inactive");
+        indicateB.classList.remove("active");
+        indicateC.classList.remove("active");
+        indicateD.classList.add("active");
+        indicateE.classList.remove("active");
+        indicateF.classList.remove("active");
+    }
+    else if(sliderNote === 5){
+        paraOne.innerHTML = testimonialData[4].testimonyone;
+        paraTwo.innerHTML = ""
+        paraThree.innerHTML = ""
+        menteeName.innerHTML = testimonialData[4].name;
+        picture.src = testimonialData[4].photo;
+        roundphoto.src = testimonialData[4].shotpics;
+        testimonies.classList.add("usaama");
+        testimonies.classList.remove("babalola");
+        testimonies.classList.remove("lady");
+        testimonies.classList.remove("chukwudi");
+
+        indicateA.classList.add("inactive");
+        indicateB.classList.remove("active");
+        indicateC.classList.remove("active");
+        indicateD.classList.remove("active");
+        indicateE.classList.add("active");
+        indicateF.classList.remove("active");
+
     }
 
     else if (sliderNote ===0){
