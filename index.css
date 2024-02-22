@@ -513,6 +513,7 @@ hr{
     letter-spacing: 0em;
     text-align: left;
     color: rgba(35, 59, 96, 1);
+    width: 90%;
 }
 
 .list-of-those-its-for{
@@ -696,6 +697,14 @@ hr{
     background: rgba(98, 85, 55, 1);
 }
 
+.testimonies.usaama{
+    background: rgba(55, 98, 76, 1);
+}
+
+.testimonies.chukwudi{
+    background: rgba(67, 55, 98, 1);
+}
+
 #testimonial-title{
     font-family: Montserrat;
     font-size: 2rem;
@@ -753,7 +762,7 @@ hr{
     display: flex;
     justify-content: end;
     width: 70%;
-    gap: 30px;
+    gap: 1.25rem;
 }
 
 .toggler-buttons button{
@@ -774,7 +783,9 @@ hr{
 
 .mentssB.active,
 .mentssC.active,
-.mentssD.active{
+.mentssD.active,
+.mentssE.active,
+.mentssF.active{
     background: rgba(255, 255, 255, 1);
 }
 
